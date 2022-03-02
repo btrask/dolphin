@@ -12,6 +12,9 @@
 
 // globals
 
+// HACK
+#undef CHAR_WIDTH
+
 namespace OGL
 {
 static const int CHAR_WIDTH = 8;

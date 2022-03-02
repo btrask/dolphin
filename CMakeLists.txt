@@ -1,8 +1,14 @@
 ########################################
 # General setup
 #
-cmake_minimum_required(VERSION 2.8.8)
+cmake_minimum_required(VERSION 3.11.0)
 project(dolphin-emu)
+
+
+
+cmake_policy(SET CMP0083 NEW)
+set(POSITION_INDEPENDENT_CODE FALSE)
+
 
 option(USE_EGL "Enables EGL OpenGL Interface" OFF)
 option(TRY_X11 "Enables X11 Support" ON)
